@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Survey Form</title>
+    <title>Super Pizza Form</title>
   </head>
   <body>
-    <h1 id="title">Free Code Camp Survey Form</h1>
-    <p id="description">
-      Thank you for taking the time to help us improve the platform
-    </p>
+    <h1 id="title">Super Pizza Survey Form</h1>
+    <p id="description">Thank you for taking the time to rate our pizza!</p>
     <form action="" id="survey-form">
       <label for="" id="name-label"
         >Name<input
@@ -35,14 +33,16 @@
           max="120"
           placeholder="Age"
       /></label>
-      <p>What option best descripes your current role?</p>
-      <select name="role-dropdown" id="dropdown">
-        <option value="student">Student</option>
-        <option value="full-time-job">Full Time Job</option>
-        <option value="learner">Learner</option>
-        <option value="other">Other</option>
+      <p class="caption">
+        Which option best describes what type of customer you are?
+      </p>
+      <select name="customer-dropdown" id="dropdown">
+        <option value="new-customer">New Customer</option>
+        <option value="occasional-customer">Occasional Customer</option>
+        <option value="frequent-customer">Frequent Customer</option>
+        <option value="critic">Critic</option>
       </select>
-      <p>Would you recommend freecodecamp to a friend?</p>
+      <p class="caption">Would you recommend Super Pizza to a friend?</p>
       <label for=""
         ><input
           type="radio"
@@ -53,18 +53,18 @@
       <label for=""
         ><input type="radio" name="recommendation" value="maybe" />Maybe</label
       >
-      <label for=""
+      <label for="" class="margin-bottom"
         ><input type="radio" name="recommendation" value="not-sure" />Not
         Sure</label
       >
-      <p>What would you like to see improved? (Check all that apply)</p>
-      <label for=""></label>
-        <input type="checkbox" value="front-end" />Front-end Projects</label
+      <p class="caption">
+        What would you like to see improved? (Check all that apply)
+      </p>
+      <label for=""><input type="checkbox" value="toppings" />Toppings</label>
+      <label for=""> <input type="checkbox" value="dough" />Dough</label>
+      <label for="" class="margin-bottom">
+        <input type="checkbox" value="sauce" />Sauce</label
       >
-      <label for=""
-        > <input type="checkbox" value="back-end"
-      />Back-end Projects</label>
-      <label for=""> <input type="checkbox" value="videos" />Videos</label>
       <label for=""
         >Any comments or suggestions?<textarea
           name="comments"
@@ -72,8 +72,8 @@
           cols="30"
           rows="10"
         ></textarea>
-        <input type="submit" id="submit" />
       </label>
+      <input type="submit" id="submit" />
     </form>
   </body>
 </html>

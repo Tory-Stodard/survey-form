@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(images/pexels-narda-yescas-1566837.jpg);
+  background-size: cover;
+  color: antiquewhite;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 2rem 0;
+}
+
+#description {
+  font-size: 1.5rem;
+}
+
 h1,
 #description {
   text-align: center;
@@ -11,9 +26,26 @@ h1,
 
 form {
   width: 60vw;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 2rem;
-  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+input,
+select {
+  height: 2rem;
+}
+
+input,
+select,
+textarea {
+  margin-bottom: 1.5rem;
+}
+
+label,
+.caption {
+  font-size: 1.5rem;
 }
 
 label,
@@ -34,4 +66,19 @@ textarea {
 input[type="radio"],
 input[type="checkbox"] {
   display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: rgb(255, 208, 0);
+  font-size: 1rem;
+  margin-bottom: 0;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.margin-bottom {
+  margin-bottom: 1.5rem;
 }
