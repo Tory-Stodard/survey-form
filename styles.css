@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+#description {
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: aqua;
+}
+
+label,
+input,
+select,
+textarea {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+}
